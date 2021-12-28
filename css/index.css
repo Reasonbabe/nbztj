@@ -1,0 +1,65 @@
+/* .xz-index 首页所有样式 */
+/* 第一行的两个列高设置 */
+.row1>div>div {
+  /* 可视宽度是变的，可视高度不变，因此使用vw单位 */
+  height: 30vw;
+  /* 因为视口会放大缩小，缩小时视口比例会越来越小，导致元素高度越来越小，因此要限制最大高度和最小高度 */
+  max-height: 384px;
+  min-height: 260px;
+}
+/* 第一行的第一列 */
+.row1 .xztext {
+  width: 45%;
+  position: relative;
+  top:8%;
+  left: 5%;
+}
+.row1 .xztext+img {
+  position: absolute;
+  bottom: 8%;
+  right: 5%;
+  /* 不能写宽，因为宽在变，而高保持变化较小 */
+  height: 80%;
+}
+
+/* 第二行的第一块 */
+.row2 .c1 >div {
+  height: 22vw;
+  max-height: 265px;
+  min-height: 260px;
+}
+
+/* 第二行第一块里的文字和图 */
+.row2 .c1 > div > div {
+  margin-top: 16%;
+  margin-left: 8%;
+}
+.row2 .c1 > div > img {
+  margin-top: 13%;
+  margin-left: 5%;
+}
+
+/* 第二行的第二大块 */
+/*第2行第2大块rowcol内容块*/
+ .row2 .c2 >div>div>div{
+  height: 22vw;
+  max-height: 265px;
+  min-height: 260px;
+}
+/* 小三块的设置 */
+/* .row2 .min3 */
+/* md以下小三块要横向排列，整体变布局 */
+@media (max-width: 768px) { 
+  .row2 .min3 img {
+    max-width: 50%;
+    float: right;
+    margin-top: 13%;
+  }
+  .row2 .min3>div {
+    max-width: 45%;
+    float: left;
+    margin-top: 12%;
+    margin-left: 5%;
+  }
+  .row2 .min3>div h6 {font-size: 24px;}
+}

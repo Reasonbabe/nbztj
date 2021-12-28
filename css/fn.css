@@ -1,0 +1,30 @@
+.d1 {
+  width: 100px; }
+
+.d2 {
+  box-shadow: 5px 5px 3px #222; }
+
+.d3 {
+  content: 1;
+  content: 3;
+  content: 2; }
+
+.d4 {
+  content: 10;
+  content: 9; }
+
+.d5 {
+  content: 6;
+  content: 6; }
+
+.d6 {
+  content: 4;
+  content: 4; }
+
+.d7 {
+  content: 4; }
+
+.d8 {
+  color: rgba(34, 34, 34, 0.5); }
+
+/*# sourceMappingURL=fn.css.map */

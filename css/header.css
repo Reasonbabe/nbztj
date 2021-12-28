@@ -1,0 +1,14 @@
+/* xz-header */
+/* 大菜单的搜索区 */
+.xz-header .xzsearch{
+  width: 50%;
+  height: 36px;
+}
+.xz-header .xzsearch input {
+  width: 80%;
+  outline: none;
+  height: 34px;
+}
+.xz-header .xzbread {
+  padding: 6px 0;
+}
